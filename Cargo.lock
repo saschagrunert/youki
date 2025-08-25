@@ -578,7 +578,7 @@ dependencies = [
  "flate2",
  "libcgroups",
  "libcontainer",
- "nix 0.29.0",
+ "nix",
  "num_cpus",
  "oci-spec",
  "once_cell",
@@ -2019,7 +2019,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "71ab563cec72fdcf30bcf31b5fdb5bb437ddac6278c2e32418642c881f02bad4"
 dependencies = [
  "cc",
- "nix 0.30.1",
+ "nix",
  "pkg-config",
 ]
 
@@ -2041,7 +2041,7 @@ dependencies = [
  "libbpf-sys",
  "libc",
  "mockall",
- "nix 0.29.0",
+ "nix",
  "oci-spec",
  "procfs",
  "quickcheck",
@@ -2066,7 +2066,7 @@ dependencies = [
  "libcgroups",
  "libseccomp",
  "nc",
- "nix 0.29.0",
+ "nix",
  "oci-spec",
  "once_cell",
  "prctl",
@@ -2366,19 +2366,6 @@ dependencies = [
 
 [[package]]
 name = "nix"
-version = "0.29.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "71e2746dc3a24dd78b3cfcb7be93368c6de9963d30f43a6a73998a9cf4b17b46"
-dependencies = [
- "bitflags 2.6.0",
- "cfg-if",
- "cfg_aliases",
- "libc",
- "memoffset 0.9.1",
-]
-
-[[package]]
-name = "nix"
 version = "0.30.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "74523f3a35e05aba87a1d978330aef40f67b0304ac79c1c00b294c9830543db6"
@@ -2387,6 +2374,7 @@ dependencies = [
  "cfg-if",
  "cfg_aliases",
  "libc",
+ "memoffset 0.9.1",
 ]
 
 [[package]]
@@ -2797,7 +2785,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "059a34f111a9dee2ce1ac2826a68b24601c4298cfeb1a587c3cb493d5ab46f52"
 dependencies = [
  "libc",
- "nix 0.30.1",
+ "nix",
 ]
 
 [[package]]
@@ -3355,7 +3343,7 @@ dependencies = [
  "anyhow",
  "libc",
  "nc",
- "nix 0.29.0",
+ "nix",
  "oci-spec",
  "tempfile",
 ]
@@ -6117,7 +6105,7 @@ dependencies = [
  "libcgroups",
  "libcontainer",
  "liboci-cli",
- "nix 0.29.0",
+ "nix",
  "pentacle",
  "procfs",
  "scopeguard",
